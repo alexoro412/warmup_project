@@ -15,6 +15,8 @@ sets the velocity via the cmd_vel channel. SquareDriver.run
 loops through the list of MoveStates and sets the velocity
 accordingly.
 
+(the robot starts moving a bit late in the recording)
+
 ![square](./square.gif)
 
 The biggest challenge was getting the movements 

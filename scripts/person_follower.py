@@ -6,7 +6,7 @@ from sensor_msgs.msg import LaserScan
 
 class PersonFollower():
     """
-    Pilots a robot to drive in a square
+    Pilots a robot to follow a person
     """
     def __init__(self):
         """
@@ -70,8 +70,7 @@ class PersonFollower():
 
     def run(self):
         """
-        Loops through a list of movements and executes
-        them to drive in a square
+        Sets up the scan subscriber and spins
         """
         rospy.Subscriber("/scan", LaserScan, self.process_scan)
         rospy.spin()       
